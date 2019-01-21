@@ -15,25 +15,25 @@
 </head>
     
 <body>
-	<div id='setNode'>
-		<img src="1.png" id='pan'>
-		<div id='circle'>
-			<div id='clipNode'></div>
-		</div> 
-	</div>
+    <div id='setNode'>
+	<img src="1.png" id='pan'>
+	<div id='circle'>
+	    <div id='clipNode'></div>
+	</div> 
+    </div>
 </body>
 
 <script type="text/javascript">
-	circle.onclick=x=>{
-		//pan.style.transform='rotate(2000deg)';
-		let xhr = new XMLHttpRequest();
-		xhr.open('get','http://localhost:2138/getRotate',true);
-		xhr.send();
-		xhr.onload = function(){
-			console.log(xhr.responseText)
-			let json = eval('('+xhr.responseText+')');
-			pan.style.transform=`rotate(${json.num}deg)`;
-		}
+    circle.onclick=x=>{
+	//pan.style.transform='rotate(2000deg)';
+	let xhr = new XMLHttpRequest();
+	xhr.open('get','http://localhost:2138/getRotate',true);
+	xhr.send();
+	xhr.onload = function(){
+	    console.log(xhr.responseText);
+	    let json = eval('('+xhr.responseText+')');
+	    pan.style.transform=`rotate(${json.num}deg)`;
 	}
+    }
 </script>
 </html>
