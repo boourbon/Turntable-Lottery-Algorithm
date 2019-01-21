@@ -5,11 +5,11 @@ const server = express();
 server.listen(2138);
 
 server.use('/getRotate',(req,res)=>{
-	//First Prize     		  1%  210 ～ 270
+	//First Prize           1%  210 ～ 270
 	//Second Prize          1.5%  -30 ～ 30
 	//Third Prize           2%  30 ～ 90
 	//Fourth Prize          2.5%  90 ～ 150
-	//Fifth Prize           3%	 270 ～ 330
+	//Fifth Prize           3%   270 ～ 330
 	//No Prize              90%  150 ～ 210
 
 
