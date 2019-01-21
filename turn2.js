@@ -7,7 +7,7 @@ server.listen(2138);
 var arr = [1,1,1,1,1] //Limited awards
 
 server.use('/getRotate',(req,res)=>{
-	//First Prize     		1%  210 ～ 270
+	//First Prize     	1%  210 ～ 270
 	//Second Prize          1.5%  -30 ～ 30
 	//Third Prize           2%  30 ～ 90
 	//Fourth Prize          2.5%  90 ～ 150
